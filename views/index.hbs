@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 1</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+             <!--navbar-->
+       <div class="topnav">
+  <a href="#home" class="active">
+    <i class="fa fa-sun-o" aria-hidden="true"></i>
+    <i class="fa fa-bolt" aria-hidden="true"></i>
+  <i class="fa fa-sun-o" aria-hidden="true"></i>
+  <i class="fa fa-bolt" aria-hidden="true"></i>
+
+  </a>
+
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="/">HOME</a>
+    <a href="/service">SERVICE</a>
+    <a href="/team">TEAM</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+    {{!-- <h2> {{>header}} </h2> --}}
+
+    <h2> Welcome in {{title}} content page </h2>
+    <p> {{desc}} </p>
+   <form id="form1">
+    <input type="text" id="address">
+    <button>Search For Weather</button>
+   </form>
+   <p id="location"></p>
+      <p id="forecast"></p>
+      {{!-- <p id="lon"></p> --}}
+      {{!-- <p id="lat"></p> --}}
+         <p id="error"></p>
+
+
+         <script src="js/script.js"></script>
+</body>
+</html>
